@@ -50,6 +50,16 @@ p span {
     font-weight: bold;
 }
 
+#menuUno .dropdown-menu > .active > a, #menuUno .dropdown-menu > .active > a:focus, #menuUno .dropdown-menu > .active > a:hover {
+    color: #FFF;
+    text-decoration: none;
+    outline: 0px none;
+    border: medium none !important;
+    background-color: rgb(237, 237, 237);
+    margin: 0px;
+    border-radius: 0px;
+    padding: 3px 20px !important;
+}
 @media(max-width:767px){
 #menuUno .dropdown-menu {
     background-color: #fff !important;
@@ -209,7 +219,16 @@ p span {
     padding: 15px 15px 0px 15px;
 }
 
-
+#menuPrincipal .dropdown-menu > .active > a, #menuPrincipal .dropdown-menu > .active > a:focus, #menuPrincipal .dropdown-menu > .active > a:hover {
+    color: #FFF;
+    text-decoration: none;
+    outline: 0px none;
+    border: medium none !important;
+    background-color: rgb(237, 237, 237);
+    margin: 0px;
+    border-radius: 0px;
+    padding: 3px 20px !important;
+}
 @media(max-width:767px){
 
 }
