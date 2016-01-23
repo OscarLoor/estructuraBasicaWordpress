@@ -5,4 +5,9 @@ function registrarMenuPrincipal() {
 }
 add_action( 'init', 'registrarMenuPrincipal' );
 
+function registrarMenuSuperior() {
+  register_nav_menu('menu-superior',__( 'Menú Superior' ));
+}
+add_action( 'init', 'registrarMenuSuperior' );
+
 ?>

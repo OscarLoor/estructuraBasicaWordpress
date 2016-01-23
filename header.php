@@ -18,6 +18,9 @@
    <!-- CSS Propio -->
     <link href="<?php echo get_template_directory_uri();?>/css/style.css" rel="stylesheet">
    
+   <!--Fontawesome-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
    <!--Cosas agregadas por Wordpress--> 
    <?php wp_head(); ?> 
    

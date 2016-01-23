@@ -1,11 +1,53 @@
-<?php get_header();?> 
-<!--Body ya tiene la clase container-fluid-->
-<div id="elementosMenu">
+<?php get_header();?>
+ <!--Body ya tiene la clase container-fluid-->
+ <div id="menuUno" class="row">
+  <div class="container">
+   <div class="pull-left">
+    <p class="pull-left"><i class="fa fa-envelope"></i> <span>Email:</span> info@deoferta.ec</p>
+    <p class="pull-left"><i class="fa fa-phone"></i> <span>Llámanos:</span> Claro: 0980860534 | Movistar: 0969087979 </p>
+   </div>
+   <div class="pull-right">
+    <?php
+
+						if ( has_nav_menu( 'menu-superior' ) ) { /* if menu location 'primary-menu' exists then use custom menu */
+
+
+						$defaults = array(
+							'theme_location'  => 'menu-superior',
+							'menu'            => '',
+							'container'       => 'div',
+							'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
+							'container_id'    => 'menuSuperior',
+							'menu_class'      => 'menu',
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'     => 'wp_page_menu',
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="nav navbar-nav">%3$s</ul>',
+							'depth'           => 0,
+							'walker'		  => new wp_bootstrap_navwalker()
+						);
+
+						wp_nav_menu( $defaults );
+
+
+						}
+
+						?>
+   </div>
+  </div>
+ </div>
+
+ <div id="elementosMenu">
   <div class="container">
    <div class="row">
     <div class="col-md-2">
      <a class="navbar-brand" href="http://www.emrproyectos.com/"><img src="<?php echo get_template_directory_uri();?>/img/logoEMRHorizontal.jpg"></a>
-    </div><!--col md 2-->
+    </div>
+    <!--col md 2-->
     <div class="col-md-8">
      <nav class="navbar " role="navigation">
 
@@ -18,7 +60,8 @@
        </button>
 
 
-      </div><!--navbar-header-->
+      </div>
+      <!--navbar-header-->
 
       <!-- Agrupar los enlaces de navegación, los formularios y cualquier
 					       otro elemento que se pueda ocultar al minimizar la barra -->
@@ -52,21 +95,25 @@
 						}
 
 						?>
-     </nav><!--nav-->
+     </nav>
+     <!--nav-->
 
-    </div><!--col md 8-->
-    
+    </div>
+    <!--col md 8-->
 
-   </div><!--row-->
-   
-  </div><!--container-->
+
+   </div>
+   <!--row-->
+
+  </div>
+  <!--container-->
  </div>
  <!--elementosMenu-->
-<div id="contenidoDeLaPagina">
-<?php
+ <div id="contenidoDeLaPagina">
+  <?php
   if(!is_front_page()){
 ?>
- <?php 
+   <?php 
 if (have_posts()) :
    while (have_posts()) :
       the_post();
@@ -74,10 +121,10 @@ if (have_posts()) :
    endwhile;
 endif;
 ?>
- <?php
+    <?php
   }else{
    echo '<h1>PáginaDeInicio<h1>';
   }
  ?>
-</div>
-<?php get_footer();?>
+ </div>
+ <?php get_footer();?>
