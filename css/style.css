@@ -60,6 +60,14 @@ p span {
     border-radius: 0px;
     padding: 3px 20px !important;
 }
+#menuSuperior .active a {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+#menuSuperior .active a:focus, #menuSuperior .active a:hover{
+    color: #ededed !important;
+ background-color: transparent !important;
+}
 @media(max-width:767px){
 #menuUno .dropdown-menu {
     background-color: #fff !important;
