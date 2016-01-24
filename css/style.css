@@ -594,12 +594,23 @@ p span {
     margin: auto !important;
 }
 .woocommerce .button.add_to_cart_button:hover {
-    background-color: #78d64b !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
+    background-color: #64ccc9 !important;
+    border: 1px solid #FFF !important;
+    color: #FFF !important;
 }
 .added_to_cart {
     color: #78d64b !important;
+}
+#parteDerecha div div img {
+	       -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease; 
+}
+
+#parteDerecha div div:hover img {
+    transform: rotate(360deg);
 }
 @media(max-width:992px){
 
