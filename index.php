@@ -25,9 +25,12 @@
     </div>
     <div id="parteDerecha" class="col-md-9">
       <div id="slider" class="row">
-        <img src="<?php echo get_template_directory_uri();?>/img/slider.jpg"/> 
+        <?php
+	echo do_shortcode('[image-carousel]');
+    
+?>
       </div>
-      <div class="row">
+      <div id="beneficios" class="row">
         <div class="col-md-4">
           <img src="<?php echo get_template_directory_uri();?>/img/iconoBeneficio.jpg"/> 
           <p><span>ENVÍO GRATIS</span></p>

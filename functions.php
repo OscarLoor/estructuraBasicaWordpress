@@ -52,4 +52,5 @@ function registrarSideBars(){
 		) );
 	}
 add_action( 'widgets_init', 'registrarSideBars' );
+add_theme_support('post-thumbnails');
 ?>
