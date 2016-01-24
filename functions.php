@@ -10,6 +10,8 @@ function registrarMenuSuperior() {
 }
 add_action( 'init', 'registrarMenuSuperior' );
 
+
+
 function registrarSideBars(){
 		register_sidebar( array(
 			'name'          => 'Footer Uno',
@@ -34,6 +36,15 @@ function registrarSideBars(){
 			'name'          => 'Footer Tres',
 			'id'            => 'footer-tres',
 			'description'   => 'Aparece en la parte inferior de la página',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>',
+		) );
+  register_sidebar( array(
+			'name'          => 'Lateral',
+			'id'            => 'lateral',
+			'description'   => 'Se ubica en el lado lateral de la página',
 			'before_widget' => '',
 			'after_widget'  => '',
 			'before_title'  => '<h3>',
