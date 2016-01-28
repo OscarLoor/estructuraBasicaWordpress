@@ -958,3 +958,55 @@ p span {
 @media(min-width:1200px){
     
 }
+
+/*Productos Relacionados Faltan partes arriba se encuentran*/
+.related .products a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.related .products .button {
+    color: #000;
+}
+ .related.products {
+    margin-bottom: 30px;
+}
+.related .products {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.related.products {
+    float: left !important;
+    width: 100%;
+}
+@media(max-width:767px){
+.products .price {
+    top: -111px ;
+    left: 50px ;
+}
+ 
+ .product .related.products h2 {
+   width: 100% !important;
+}
+ .product .related.products h2 {
+    margin-bottom: 10px;
+}
+
+}
+
+@media(max-width:992px){
+
+}
+@media(max-width:1200px){
+
+}
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+       
+}
+@media(min-width:1200px){
+    
+}
