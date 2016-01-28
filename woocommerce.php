@@ -20,14 +20,9 @@
 
     </div>
     <div id="parteDerecha" class="col-md-9">
-      <?php 
-if (have_posts()) :
-   while (have_posts()) :
-      the_post();
-      the_content();
-   endwhile;
-endif;
-?>
+  <?php 
+						woocommerce_content();
+					?>
 
     </div>
    </div>

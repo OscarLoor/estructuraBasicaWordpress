@@ -53,4 +53,13 @@ function registrarSideBars(){
 	}
 add_action( 'widgets_init', 'registrarSideBars' );
 add_theme_support('post-thumbnails');
+
+add_filter(‘loop_shop_columns’, ‘loop_columns’);
+
+if (!function_exists(‘loop_columns’)) {
+function loop_columns() {
+return 2; // 3 products per row
+}
+}
+
 ?>
