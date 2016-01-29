@@ -13,6 +13,9 @@ body {
 a:focus, a:hover {
     text-decoration: none;
 }
+a {
+    color: #78d64b;
+}
 /*Menu Superior*/
 #menuUno {
     background-color: #78d64b;
@@ -865,7 +868,7 @@ p span {
     padding: 5px 30px !important;
     font-size: 16px;
     width: 250px;
-    margin-bottom: 45px;
+    margin-bottom: 0px;
 }
 .woocommerce-tabs #tab-description h2 {
     font-size: 22px;
@@ -1059,6 +1062,9 @@ p span {
     padding-top: 20px;
     padding-left: 0px;
 }
+.related .products {
+    border-top: medium none !important;
+}
 #parteDerecha .woocommerce-pagination {
     float: left;
     width: 100%;
@@ -1119,4 +1125,47 @@ p span {
 }
 .page-numbers li:hover a {
     color: #fff !important;
+}
+.related.products {
+    border-top: none !important;
+}
+/*Redes Sociales*/
+.social-icons {
+    float: left;
+    width: 267px;
+    font-size: 50px !important;
+    position: fixed;
+    top: 124px;
+    right: -215px;
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease 0s;
+  z-index: 99999;
+}
+
+ .social-icons:hover , .social-icons:focus{
+    right: 0px;
+}
+.socialitems {
+    float: left;
+    width: 100%;
+    background-color: #64ccc9;
+    padding: 10px;
+}
+.social-icons .fa {
+    float: left;
+    font-size: 40px !important;
+    color: rgb(255, 255, 255);
+}
+.social-icons .social-text {
+    float: left;
+    font-size: 17px;
+    padding-top: 8px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+#redSocialAbajo {
+    top: 184px;
 }
