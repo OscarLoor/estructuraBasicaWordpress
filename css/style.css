@@ -10,6 +10,9 @@
 body {
     font-family: KelsonSans;
 }
+a:focus, a:hover {
+    text-decoration: none;
+}
 /*Menu Superior*/
 #menuUno {
     background-color: #78d64b;
@@ -584,7 +587,7 @@ p span {
     width: 109px;
     text-align: center;
     top: 156px;
-    left: 153px;
+    left: 139px;
     display: block;
 }
 .products  li h3 {
@@ -595,12 +598,14 @@ p span {
     text-align: center;
 }
 
-.products  .button {
-    background-color: #fff !important;
+.products .button {
+    background-color: #FFF !important;
     border-radius: 20px !important;
     border: 1px solid #000 !important;
     text-transform: uppercase;
     padding: 0px 10px;
+    color: #000;
+    text-decoration: none;
 }
 
 .products  li .price {
@@ -985,6 +990,7 @@ p span {
 .products li h3 {
     height: 30px;
 }
+
 @media(max-width:767px){
 .products .price {
     top: 82px;
@@ -1016,4 +1022,101 @@ p span {
 }
 @media(min-width:1200px){
     
+}
+
+/*Mostrar los productos de una categoría*/
+#parteDerecha .page-title {
+    margin: 0px 0px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+#parteDerecha .woocommerce-result-count {
+    float: right;
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+#parteDerecha .woocommerce-ordering {
+    float: right;
+    clear: left;
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+#parteDerecha .woocommerce-ordering .orderby {
+    border: medium none;
+    width: 100%;
+}
+#parteDerecha .products {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #999;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+#parteDerecha .woocommerce-pagination {
+    float: left;
+    width: 100%;
+}
+#parteDerecha .products .product {
+    width: 33%;
+    float: left;
+    list-style: outside none none;
+    position: relative;
+    padding: 10px;
+}
+#parteDerecha li h3 {
+    font-size: 1em;
+}
+.woocommerce-pagination .page-numbers li {
+    float: left;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #78D64B;
+    padding: 10px;
+    border-radius: 37px;
+    list-style: outside none none;
+}
+.woocommerce-pagination .page-numbers li a{
+    color: #78D64B;
+ }
+#parteDerecha .woocommerce-pagination {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.woocommerce-pagination .page-numbers {
+    margin: auto;
+    display: inline-block;
+}
+
+.woocommerce-pagination .page-numbers li > .current {
+    float: left;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #FFF;
+    background-color: #78D64B;
+    padding: 10px;
+    border-radius: 37px;
+    list-style: outside none none;
+    margin: -10px !important;
+}
+.page-numbers li:hover {
+    background-color: #64ccc9;
+    color: #fff !important;
+}
+.page-numbers li:hover a {
+    color: #fff !important;
 }

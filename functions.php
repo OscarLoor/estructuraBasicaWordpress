@@ -62,6 +62,8 @@ return 2; // 3 products per row
 }
 }
 
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );
+
 /**
  * WooCommerce Extra Feature
  * --------------------------
