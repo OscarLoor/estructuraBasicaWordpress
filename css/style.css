@@ -575,16 +575,17 @@ p span {
     top: 90px;
 }
 .products .price {
-    position: relative;
+    position: absolute;
     background-color: rgba(120, 214, 75, 0.9);
     color: #FFF !important;
     border-radius: 1000px;
     padding: 42px 17px;
     height: 105px;
-    width: 105px;
+    width: 109px;
     text-align: center;
-    top: -121px;
-    left: 94px;
+    top: 156px;
+    left: 153px;
+    display: block;
 }
 .products  li h3 {
     color: #000;
@@ -611,7 +612,7 @@ p span {
 }
 
 .products li:hover .price {
-    top: -175px;
+    top: 109px;
 }
 #tituloProductosDestacados {
     text-align: center;
@@ -666,8 +667,9 @@ p span {
 .related.products .products li {
     width: 33%;
     float: left;
-    list-style: none;
+    list-style: outside none none;
     padding: 10px;
+    position: relative;
 }
 
 .related.products .products h3 {
@@ -980,10 +982,13 @@ p span {
     float: left !important;
     width: 100%;
 }
+.products li h3 {
+    height: 30px;
+}
 @media(max-width:767px){
 .products .price {
-    top: -111px ;
-    left: 50px ;
+    top: 82px;
+    left: 76px;
 }
  
  .product .related.products h2 {
@@ -992,7 +997,9 @@ p span {
  .product .related.products h2 {
     margin-bottom: 10px;
 }
-
+.products li:hover .price {
+    top: 50px;
+}
 }
 
 @media(max-width:992px){
